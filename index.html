@@ -21,27 +21,11 @@
     <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="css/templatemo-style.css">
     <!-- Templatemo style -->
-
-    <!-- Add some custom CSS for the tabs -->
-    <style>
-      .tab { cursor: pointer; }
-      .tab-content div { display: none; }
-    </style>
   </head>
 
   <body>
 
     <div class="container">
-      <!-- Add the tabs here -->
-      <div class="tabs">
-        <div class="tab" onclick="showTab(0)">Tab 1</div>
-        <div class="tab" onclick="showTab(1)">Tab 2</div>
-      </div>
-      <div class="tab-content">
-        <div id="tab-0">Content for Tab 1</div>
-        <div id="tab-1">Content for Tab 2</div>
-      </div>
-      
         <div class="row">
 	    <div class="col-lg-12">
 	        <header class="text-center tm-site-header">
@@ -232,16 +216,6 @@
     <script src="js/jquery.min.js"></script>
     <!-- <script src="js/jquery-3.2.1.slim.min.js"></script> -->
     <script src="js/templatemo-script.js"></script>
-
-    <!-- Add the JavaScript for the tabs -->
-    <script>
-      function showTab(index) {
-          var contents = document.querySelectorAll('.tab-content div');
-          for (var i = 0; i < contents.length; i++) {
-              contents[i].style.display = i === index ? 'block' : 'none';
-          }
-      }
-    </script>
 
   </body>
 </html>
